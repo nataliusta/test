@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+	<div class="sign-up">Sign up</div>
+	
+  <div class="form-wrapper">
+		<h2 class="form-header">New user?</h2>
+		<p class="form-description">Use the form below to create your acconut.</p>
+			<form action="/register" method="POST">
+				<label for="name">First name</label>
+				<input type="text" id="name" name="name" placeholder="Alice" required><br><br>
+
+				<label for="surmname">Last name</label>
+				<input type="text" id="name" name="name" placeholder="Miller" required><br><br>
+
+				<label for="nationality">Nationality</label>
+				<input type="text" id="name" name="name" placeholder="American" required><br><br>
+				
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email"  placeholder="alice.miller@yahoo.com" required><br><br>
+
+				<label for="date">Date of birth</label>
+			
+				<label for="day"></label>
+					<select id="day" name="day" required>
+						<option value="">21</option>
+					</select><br><br>
+    
+				<label for="month"></label>
+					<select id="month" name="month" required>
+						<option value="">December</option>
+					</select><br><br>
+
+				<label for="year"></label>
+					<select id="year" name="year" min="1900" max="2023" required>
+						<option value="">1995</option>
+					</select><br><br>
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required><br><br>
+
+				<p class="login">Have an account?<a href="/login">Login</a></p>
+				
+				<label for="confirm-password">Complete signup</label>
+				<input type="password" id="confirm-password" name="confirm-password" required><br><br>
+				
+				<input type="submit" value="Register">
+			</form>
+	</div>                         
+</body>
+
+</html>
